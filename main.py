@@ -1,7 +1,6 @@
-
 # Import functions from task_manager.task_utils package
-from task_utils import add_task, mark_task_as_complete, view_pending_tasks, calculate_progress
- 
+from task_manager.task_utils import add_task, mark_task_as_complete, view_pending_tasks, calculate_progress
+
 # Define the main function
 def main():
     while True:
@@ -12,7 +11,7 @@ def main():
         print("4. View Progress")
         print("5. Exit")
         choice = input("Enter your choice (1-5): ")
- 
+
         if choice == "1":
             title = input("Enter task title: ")
             description = input("Enter task description: ")
@@ -31,6 +30,6 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
- 
+
 if __name__ == "__main__":
     main()
